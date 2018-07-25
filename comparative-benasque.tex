@@ -23,7 +23,7 @@
 %Slide 0 - title
 \begin{slide}
 \begin{center}
-\large{\textbf{RNA homology search using covariance models}}
+\large{\textbf{Discovery of Archaeal Group I Introns using Infernal}}
 
 \normalsize
 
@@ -51,6 +51,8 @@ National Institutes of Health\\
 %\includegraphics[width=2.5in]{figs/jrc-color}
 \end{center}
 \end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{comment}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
@@ -124,9 +126,11 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \vfill
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{comment}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
-\textbf{Amount of information in a profile can be measured in bits}
+\textbf{Sequence conservation provides \\ information for homology searches}
 \medskip
 
 \includegraphics[width=9in]{figs/seqstructprofiles-2014-seqinfo}
@@ -200,7 +204,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \end{tabular}
 
 %\hspace{1.2in}\includegraphics[height=2in]{figs/hmmer_logo}\hspace{1.05in}\includegraphics[height=2.6in]{figs/infernal_logo}
-\hspace{1.8in}\includegraphics[height=2.7in]{figs/hmmer-infernal-refs-2014}
+\hspace{1.8in}\includegraphics[height=2.7in]{figs/hmmer-infernal-refs-2018}
 
 \end{center}
 
@@ -213,7 +217,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\input{prob-hmm-cm-slides.tex}
+%\input{prob-hmm-cm-slides.tex}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -234,6 +238,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 
 \vfill 
 \end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
@@ -266,6 +271,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 
 \vfill
 \end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\begin{slide}
 %\begin{center}
@@ -378,8 +384,6 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 
 \vfill 
 \end{slide}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{slide}
 \begin{center}
@@ -389,7 +393,7 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \small
 \begin{itemize}
 \item homology search/alignment: Infernal,
-  COVE, Rfam\footnote{Kalvari et al., Nucleic acids research, 2018, 46(D1), D335-D342.},
+  COVE, Rfam\footnote{Kalvari et al., NAR, 2018, 46(D1), D335-D342.},
   Alternal\footnote{S. Janssen and R. Giegerich. BMC Bioinformatics
     2015, 16:178}, RNATOPS\footnote{Z. Huang et al, 
     Bioinformatics, 24(20), 2281-2287, 2008.}
@@ -397,27 +401,267 @@ Base-paired positions covary \\ to maintain Watson-Crick complementarity.
 \item RNA discovery: CMfinder\footnote{Z. Yao, Z. Weinberg, W. L. Ruzzo,
   Bioinformatics 2006, 22(4), 445-452.}, 
   Zasha's pipeline(s)\footnote{
-    Z. Weinberg et al., Nucleic acids research, 2017. 45(18), 10811–10823,
-    Z. Weinberg et al., Nucleic acids research, 2007. 35(14), 4809-4819,
-    Z. Weinberg et al. Genome Biol, 2010. 11(3), R31.}
+    Z. Weinberg et al., NAR, 2017. 45(18), 10811–10823,
+    Z. Weinberg et al. Genome Biol, 2010. 11(3), R31.,
+    Z. Weinberg et al., NAR, 2007. 35(14), 4809-4819}
 \item structure comparison: CMCompare\footnote{F. Eggenhofer et al.,
-  Nucleic acids research, 2013, 41(W1),  W499–W503.,
+  NAR, 2013, 41(W1),  W499–W503.,
   C. H. zu Siederdissen, and
   I. L. Hofacker Bioinformatics, 2010. 26(18), i453-i459.}
-\item family-specific programs: 
+\item family-specific programs/databases: 
 \begin{itemize}
 \item tRNAscan-SE\footnote{T. M. Lowe, S. R. Eddy. NAR,
     25:955-964, 1997.}, 
-\item 16S/18S rRNA alignment: SSU-ALIGN\footnote{ E. P. Nawrocki. PhD
-  Thesis: 2009, Washington University School of Medicine}
+\item 16S/18S rRNA alignment: Ribosomal Database Project
+  (RDP) and SSU-ALIGN\footnote{J. R. Cole et al., NAR, 2014, 42D, D633-D642; E. P. Nawrocki. PhD
+  Thesis: 2009, Wash U School of Med}
 \item bacterial terminator identification: RNIE\footnote{P.P. Gardner
-  et al. Nucleic acids research, 2011, 39(14), 5845-5852.}
+  et al. NAR, 2011, 39(14), 5845-5852.}
 \end{itemize}
 \end{itemize}
 
 \vfill 
 \end{slide}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Infernal 1.1 finds 11,000 new group I intron candidates}
+\end{center}
+
+%\center{\includegraphics[width=10.5in]{figs/rfam-nar-table1-published-gp1i-yellow}}
+\center{\includegraphics[width=10.5in]{figs/rfam-nar-table1-published-gp1i-yellow-top5only}}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Group I catalytic introns}
+\end{center}
+%
+\small
+\begin{itemize}
+\item self splicing ribozymes found in lower eukaryotes, higher
+  plants, bacteria and bacteriophages
+%\item core secondary structure (modeled by Rfam) consists of 9 paired
+%  regions
+\item often have ORFs (homing endonucleases) inserted in loop regions
+\item genes they are found in:
+\begin {itemize}
+\item bacteria and mitochondria and chloroplast of lower euks: rRNA, mRNA, and tRNAs
+\item higher plants mitochondria and chloroplast: a few tRNA and mRNA genes
+\item nuclear lower eukaryotic genomes: only rRNA
+%\item Gram positive bacteriophages: widely distributed
+%\item Gram negative bacteriophages: T4, T-even and T7-like
+\end{itemize}
+\end{itemize}
+
+%\center{\includegraphics[height=4in]{figs/gp1-schematic-small.png}}
+\center{\includegraphics[height=4.5in]{figs/gp1-schematic-big.png}}
+
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\center{\includegraphics[height=8in]{figs/RF00028-ss-info-ss-1}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\center{\includegraphics[height=8in]{figs/RF00028-ss-mutinfo-ss-1}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\small
+\textbf{GISSD\footnote{Y. Zhou et. al, NAR, 2008. 36(suppl
+    1), D31-D37.}: Group I Intron Sequence and Structure Database}
+\end{center}
+
+\center{\includegraphics[width=8in]{figs/gissd-banner}}
+
+\center{\includegraphics[width=8in]{figs/GISSD-stats-zoomed}}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Searching Rfamseq with GISSD models}
+\end{center}
+
+%\small
+%\begin{center}
+%\begin{tabular}{l|r|rrr|r}
+%\tt
+%        & \# RF00028 & \# hits   & \# hits& \# hits& total     \\
+%type    & seed seqs  & total     & common & unique & CPU hours \\ \hline
+%IA1     & 3          &  814      & 385    & 425    & 1076 \\
+%IA2     & 1          &  1722     & 823    & 899    & 50 \\
+%IA3     &            &   958     & 401    & 557    & 14 \\
+%IB1     &            &  3949     & 1033   & 2916   & 32 \\
+%IB2     &            & 1861     & 467    & 1394   & 31 \\
+%IB3     &            & 479     & 136    & 343    & 40 \\
+%IB4     &  1         & 5717     & 2400   & 3317   & 39 \\
+%IC1     &  3         & 8475     & 5385   & 3090   & 24 \\
+%IC2     &            & 4870     & 3858   & 1012   & 22 \\
+%IC3     & 4          & 72692     & 66033  & 6659   & 136 \\
+%ID      &            & 572     & 0      & 572    & 29 \\
+%IE1     &            & 1305     & 10     & 1295   & 12 \\
+%IE2     &            & 1377     & 8      & 1369   & 12 \\
+%IE3     &            & 1379     & 1      & 1378   & 13 \\
+%        &            &          &        &        &    \\
+%total   & 12         & 106170*   & 80940* & 25226  & 1530 \\
+%        &           &           &        &    \\
+%RF00028 & -         & 71421     & 71421  & -      & 125 \\
+%\end{tabular}
+
+\tt
+\small
+\begin{center}
+\begin{tabular}{l|r|rrr}
+        & \# RF00028 & \# hits   & \# hits& \# hits\\
+type    & seed seqs  & total     & common & unique \\ \hline
+IA1     & 3          &  814      & 385    & 425    \\
+IA2     & 1          &  1722     & 823    & 899    \\
+IA3     &            &   958     & 401    & 557    \\
+IB1     &            &  3949     & 1033   & 2916   \\
+IB2     &            & 1861     & 467    & 1394   \\
+IB3     &            & 479     & 136    & 343    \\
+IB4     &  1         & 5717     & 2400   & 3317   \\
+IC1     &  3         & 8475     & 5385   & 3090   \\
+IC2     &            & 4870     & 3858   & 1012   \\
+IC3     & 4          & 72692     & 66033  & 6659   \\
+ID      &            & 572     & 0      & 572    \\
+IE1     &            & 1305     & 10     & 1295   \\
+IE2     &            & 1377     & 8      & 1369   \\
+IE3     &            & 1379     & 1      & 1378   \\
+        &            &          &        &        \\
+%total   & 12         & 106170*   & 80940* & 25226*  \\
+total   & 12         & 106170*   & 80940* &  16842 \\
+        &           &           &        \\
+RF00028 & -         & 71421     & 71421  & -      \\
+\end{tabular}
+
+\begin{description}
+\item[*] contains overlaps
+\end{description}
+
+
+\end{center}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\center{\includegraphics[height=8in]{figs/sean-slide-012215-gp1i-distro}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Homology searches for group I introns in Archaea}
+\end{center}
+%
+\small
+\begin{itemize}
+\item downloaded all archaeal sequences in GenBank (6.7Gb as of Sept
+  2017)
+\item searched archaeal sequences with all GISSD models + RF00028 with
+  default cmsearch parameters and with \texttt{--anytrunc}
+\item 95 non-overlapping hits with $E < 0.01$
+  corresponding\footnote{as determined via manual sequence analysis by Tom Jones} to 39
+  group I intron candidates (12 IA3 and 27 IB4)
+\item 30/39 introns have at least one hit with $E < 10^{-10}$ 
+\item 36 within LSU rRNA, 3 within SSU rRNA
+\item All IA3s are in one of two LSU insertion positions:
+  \begin{itemize}
+  \item LSU/2593 (N=10)
+  \item LSU/2500 (N=2)
+  \end{itemize}
+\item All IB4s are in one of two LSU insertion positions and one SSU
+  position:
+  \begin{itemize}
+  \item LSU/1931 (N=15)
+  \item LSU/1923 (N=9)
+  \item SSU/1498 (N=3)
+  \end{itemize}  
+\end{itemize}  
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\center{\includegraphics[width=10in]{figs/gp1-fig2-ss}}\footnote{
+E. P. Nawrocki, T. A. Jones, and S. R. Eddy, NAR, 2018, gky414}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Could archaeal group I introns have evolved into BHB introns?}
+\end{center}
+\center{\includegraphics[width=8in]{figs/Tocchini-Valentini-title-screenshot}}\footnote{PNAS March 22, 2011. 108 (12) 4782-4787;}
+
+\textbf{Archaeal group I introns can occur in same host gene as BHB introns}
+
+\center{\includegraphics[width=10in]{figs/gp1-fig1-schematic}}
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+\begin{center}
+\textbf{Group I introns are widespread in Archaea}
+\end{center}
+
+\center{\includegraphics[height=6.5in]{figs/gp1-fig3-cladogram}}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{slide}
+
+\large
+\begin{center}
+\large{\textbf{Acknowledgements}} \\
+
+\normalsize
+\vspace{0.5in}
+
+\begin{tabular}{l|l}
+\textbf{Harvard/Janelia} & \textbf{NCBI} \\
+Sean Eddy                &  Alejandro Sch\"{a}ffer \\
+Tom Jones                &  David Landsman \\
+Diana Kolbe              &  Jim Ostell \\
+Travis Wheeler           &  David Lipman \\
+Elena Rivas              &  \\
+Michael Farrar           & \\
+                & \\ \hline
+                & \\
+\textbf{GISSD}  & \textbf{David Haussler's group} \\
+Yu Zhou         & Yasu Sakakibara \\
+Chen Lu         &  (CM-like models in 1994) \\
+Qi-Jia Wu       &  \\
+Yu Wang         &  \\
+Zhi-Tao Sun     &  \\
+Jia-Cong Deng   &  \\
+Yi Zhang        &  \\
+\end{tabular}
+
+\end{center}
+
+\vfill
+\end{slide}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+
 \begin{slide}
 
 \large
@@ -436,7 +680,7 @@ Tom Jones \\
 Michael Farrar \\
 
 \vspace{0.5in}
-\textbf{David Haussler's group}
+\textbf{David Haussler's group (CM-like models in 1994)} \\
 Yasu Sakakibara\\
 
 \vspace{0.5in}
